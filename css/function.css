@@ -10,10 +10,8 @@ a:link {
     text-decoration: none;
 }
 
-h1 {
-   white-space: nowrap;
-   }
-   
+
+
 .button {
     box-shadow: inset 0 0 0 30px #00A6BC;
     color: #FFFFFF !important;
