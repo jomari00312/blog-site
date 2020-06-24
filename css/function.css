@@ -1,0 +1,235 @@
+@import url(font-awesome.min.css);
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+   
+.button {
+    box-shadow: inset 0 0 0 30px #00A6BC;
+    color: #FFFFFF;
+    border-radius: 30px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: .80em;
+    font-weight: 600;
+    height: 3.75em;
+    line-height: 3.85em;
+    letter-spacing: 2px;
+    padding: 0 4em;
+    text-align: center;
+    margin-top: 70px;
+    text-transform: uppercase;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.txt-15{
+      background-color: #9FC3D1;
+      padding: 8px;
+      margin: 3px 0px;
+    }
+    
+    .block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #00A6BC;
+  color: white;
+  padding: 34px 28px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.block:hover {
+  background-color: #ddd;
+  color: black;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.carbon {
+    width: 100%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.ito{
+
+white-space: nowrap;
+}
+@media screen and (min-width: 601px) {
+  div.example {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 30px;
+  }
+}
+
+
+img {
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+
+
+
+.hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #00A6BC;
+    text-align: center;
+    cursor: pointer;
+}
+
+.myImage {
+    width: 600px;
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+    .myImage {
+        width: 100vw;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    margin-left: 100px;
+    width: 70.33%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.hero-text button:hover {
+    background-color: ;
+  color: white;
+}
+
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.facebook {
+    background: #00A6BC;
+    color: white;
+}
+
+.instagram {
+    background: grey;
+    color: white;
+}
+
+.twitter {
+    background: #00A6BC;
+    color: white;
+}
+
+.youtube {
+    background: grey;
+    color: white;
+}
+
+.pinterest {
+    background: #00A6BC;
+    color: white;
+}
+
+.content {
+    margin-left: 75px;
+    font-size: 30px;
+}
+
+#footer {
+    padding: 1em 0;
+    background: #000000;
+    color: #fff;
+    text-align: center;
+}
+
+#footer p {
+    padding: margin-top:
+		margin-bottom:
+		
+#footer h3 {
+    color: #FFF;
+    margin-bottom: 2em !important;
+}
+
+@media screen and (max-width: 980px) {
+    #footer {
+        padding: 4em 0;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    #footer {
+        padding: 3em 0;
+    }
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
