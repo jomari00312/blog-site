@@ -10,6 +10,56 @@
   <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900" rel="stylesheet">
 <style>
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
 
 h1 {
   display: block;
@@ -21,168 +71,16 @@ h1 {
   font-weight: bold;
 }
 
-nav {
-      width: 100%;
-      background: #2a2b2d;
-      height: 50px;
-      position: static;
-      z-index: 1;
-}
-
-nav #brand {
-      float: left;
-      display: block;
-      margin-left: 30px;
-      font-size: 20px;
-      line-height: 57px;
-      font-weight: bold;
-}
-
-nav #brand a {
-      color: #fff;
-      transition: all 0.3s ease-out;
-      font-family: "Poppins";
-      font-weight: 400;
-}
-
-nav #menu {
-      float: left;
-      left: 50%;
-      position: relative;
-}
-
-nav #menu li {
-      display: inline-block;
-      padding: 0px 30px;
-      cursor: pointer;
-      line-height: 25px;
-      position: relative;
-      transition: all 0.3s ease-out;
-}
-
-nav #menu li a {
-      color: #fff;
-      font-family: "Poppins";
-      font-weight: 2000;
-}
-
-#toggle {
-      position: absolute;
-      right: 20px;
-      top: 14px;
-      z-index: 999;
-      width: 20px;
-      height: 20px;
-      cursor: pointer;
-      float: right;
-      transition: all 0.3s ease-out;
-      visibility: hidden;
-      opacity: 0;
-}
-
-#toggle .span {
-      height: 3px;
-      background: #00A6BC;
-      transition: all 0.3s ease-out;
-      backface-visibility: hidden;
-      margin: 5px auto;
-}
-
-#toggle.on #one {
-      transform: rotate(45deg) translateX(2px) translateY(4px);
-}
-
-#toggle.on #two {
-      opacity: 0;
-}
-
-#toggle.on #three {
-      transform: rotate(-45deg) translateX(8px) translateY(-10px);
-}
-
-#resize {
-      z-index: 1;
-      top: 0px;
-      position: absolute;
-      background: #000;
-      width: 100%;
-      height: 100%;
-      visibility: hidden;
-      opacity: 0;
-      transition: all 1s ease-out;
-      display: table;
-}
-
-#resize #menu {
-      height: 90px;
-      display: table-cell;
-      vertical-align: center;
-}
-
-#resize #menu li {
-      display: block;
-      text-align: center;
-      padding: 20px 0;
-      font-size: 50px;
-      min-height: 50px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.3s ease-out;
-}
-
-#resize li:nth-child(1) {
-      margin-top:140px;
-}
-
-#resize #menu li a {
-      color: #fff;
-}
-
-#resize.active {
-      visibility: visible;
-      opacity: 0.99;
-}
-
-
-@media(max-width: 768px) {
-      #toggle {
-            visibility: visible;
-            opacity: 1;
-            margin-top: -1px;
-      }
-
-      nav #brand {
-            margin-left: 18px;
-      }
-
-      #menu a {
-            font-family: "Poppins";
-            font-weight: 200;
-            font-size: 20px;
-      }
-
-      nav #menu {
-            display: none;
-      }
-}
-
-@media(min-width: 768px) {
-      #resize {
-            visibility: hidden !important;
-      }
-}
-
 
 #banner {
 		padding: 8em 0 9em 0;
-		background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(css/banner.jpg);
+		background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(banner.jpg);
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		text-align: center;
 		position: relative;
-		min-height: 80vh;
 	}
 
 		
@@ -190,7 +88,7 @@ nav #menu li a {
 		
 		#banner h1 {
 			font-size: 4.5em;
-			font-weight: 4000;
+			font-weight: 400;
 			color: #fff;
 			line-height:2em;
 			margin: 0 0 1em 0;
@@ -267,51 +165,39 @@ nav #menu li a {
 </style>
 </head
 <body>
- <nav>
-            <span id="brand">
-                  <a href="index.html">JOM📌s</a>
-            </span>
-
-            <ul id="menu">
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li><a href="https://unsplash.com/@jomari00312">Unsplash</a></li>
-                  <li><a href="gallery.html">Gallery</a></li>
-            </ul>
-
-            <div id="toggle">
-                  <div class="span" id="one"></div>
-                  <div class="span" id="two"></div>
-                  <div class="span" id="three"></div>
-            </div>
-      </nav>
-
-      <div id="resize">
-            <ul id="menu">
-                   <li><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li><a href="https://unsplash.com/@jomari00312">Unsplash</a></li>
-                  <li><a href="gallery.html">Gallery</a></li>
-            </ul>
-      </div>
-
- <script>
-
-      $("#toggle").click(function() {
-
-      $(this).toggleClass('on');
-      $("#resize").toggleClass("active");
-
-      });
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
 
-      </script>
 
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+ 
 <!-- Banner -->
 			<section id="banner">
 				<div class="inner">
 					
 						<h1>Jomari Catabay <br> A Student Photographer</h1>
+					<br>
+					<br>
+					<br>
+					<br>
 					<br>
 					<br>
 					<footer>
