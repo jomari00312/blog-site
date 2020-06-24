@@ -4,46 +4,71 @@
  <title> Jom📌s Blog Site  </title>
 <link rel='icon' href='images/favicon.png' type='image/x-icon'/ >
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <link rel="stylesheet" href="css/function.css" />
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900" rel="stylesheet">
 <style>
-
 </style>
 </head
 <body>
-<div class="topnav" id="myTopnav">
-  <a class="active" href="gallery.html"> Gallery </a>
-  <a href="https://unsplash.com/@jomari00312">  Unsplash </a>
-  <a href="contact.html">Contact</a>
-  <a href="about.html">About</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
+ <nav>
+            <span id="brand">
+                  <a href="index.html">JOM📌s</a>
+            </span>
+
+            <ul id="menu">
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="https://unsplash.com/@jomari00312">Unsplash</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+
+            <div id="toggle">
+                  <div class="span" id="one"></div>
+                  <div class="span" id="two"></div>
+                  <div class="span" id="three"></div>
+            </div>
+      </nav>
+
+      <div id="resize">
+            <ul id="menu">
+                   <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="https://unsplash.com/@jomari00312">Unsplash</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+      </div>
+
+ <script>
+
+      $("#toggle").click(function() {
+
+      $(this).toggleClass('on');
+      $("#resize").toggleClass("active");
+
+      });
 
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
+      </script>
 
-<div class="hero-image">
-  <div class="hero-text">
-   <br>
-    <br>
-     <br>
-    <br>
-     <br>
-    <br>
-  
-    <h1 style = "font-family:Arial, Helvetica, sans-serif;font-size:50px; margin-top: 200px;">J🩸mari Catabay </h1>  <br> <br><a href="profile.html" class="button"> Profile </a></h1>
-    
+<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					
+						<h1>Jomari Catabay <br> A Student Photographer</h1>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<footer>
+						<a href="profile.html" class="button">Profile</a>
+					</footer>
+				</div>
+			</section>  
   </div>
   </div>
 </div>
