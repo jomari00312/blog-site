@@ -35,6 +35,8 @@ body {
 }
 
 
+
+
 .txt-15{
       background-color: #9FC3D1;
       padding: 8px;
@@ -87,9 +89,6 @@ img {
     margin-right: auto;
     margin-bottom: 5px;
 }
-
-
-
 
 .hero-text button {
     border: none;
@@ -231,5 +230,3 @@ th {
 tr:nth-child(even) {
     background-color: #dddddd;
 }
-
-
